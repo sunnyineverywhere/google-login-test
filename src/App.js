@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import GoogleLogin from "./component/GoogleLogIn";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GoogleLogin />
     </div>
   );
 }
 
 export default App;
+
+/*
+<GoogleOAuthProvider clientId="451481737505-i96lk8b7lfj079nk1ksu3ikpbm0oeaac.apps.googleusercontent.com">
+        <GoogleLogin
+          onSuccess={(credentialResponse) => {
+            console.log(credentialResponse);
+          }}
+          onError={() => {
+            console.log("Login Failed");
+          }}
+        />
+      </GoogleOAuthProvider>
+*/
