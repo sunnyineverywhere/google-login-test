@@ -39,8 +39,7 @@ class GoogleLogin extends Component {
         // https://developers.google.com/identity/sign-in/web/reference#gapiauth2initparams
         // https://developers.google.com/identity/sign-in/web/reference#gapiauth2clientconfig
         this.auth2 = window["gapi"].auth2.init({
-          client_id:
-            "451481737505-i96lk8b7lfj079nk1ksu3ikpbm0oeaac.apps.googleusercontent.com",
+          client_id: "*",
           cookiepolicy: "single_host_origin",
           scope: "profile email",
         });
